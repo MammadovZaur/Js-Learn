@@ -227,6 +227,7 @@
 // //****************************Home work 2 *************************\\
 
 //****************************Functions*************************\\
+let num = 20;
 function getName() {
     console.log("Zaur");
     return 35;
@@ -237,6 +238,19 @@ getName();
 const direktor = getName();
 console.log(direktor);
 
+const oo = function (){
+    num = 10;
+    return num+5;
+};
+oo();
+console.log(num);
+console.log(oo());
 
+const calc = (a, b) => {
+    let c;
+    c = a + b;
+    // return c;
+};
+console.log(calc);
 
 //****************************Functions*************************\\
