@@ -227,6 +227,16 @@
 // //****************************Home work 2 *************************\\
 
 //****************************Functions*************************\\
+function getName() {
+    console.log("Zaur");
+    return 35;
+}
+
+getName();
+
+const direktor = getName();
+console.log(direktor);
+
 
 
 //****************************Functions*************************\\
