@@ -275,3 +275,57 @@
 // console.log(parseInt(str));
 // console.log(parseFloat(str));
 // //****************************Number Metods*************************\\
+
+
+
+//****************************Home work 2 *************************\\
+
+let numberOfFilms;
+
+function start() {
+    numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+    while(numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)){
+        numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+    }
+}
+
+start();
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+
+// const question = prompt("Один из последних просмотренных фильмов?", "");
+// const answer  = prompt("На сколько оцените его?", "");
+
+const quantity = 2;
+for (let i = 1; i <= quantity; i++) {
+    const question = prompt("Один из последних просмотренных фильмов?", ""),
+          answer = prompt("На сколько оцените его?", "");
+
+    if (question != '' && question != null && answer != '' && answer != null && answer.length <50 ) {
+        personalMovieDB.movies[question] = answer;
+    } else {
+        alert("Sual və ya cavab boş ola bilməz!!!");
+        i--;
+    }
+}
+
+if (personalMovieDB.count < 10){
+    console.log("Просмотрено довольно мало фильмов");
+}else if(personalMovieDB.count > 10 && personalMovieDB.count < 30 ){
+    console.log("Вы классический зритель");
+}else if(personalMovieDB.count > 30){
+    console.log("Вы киноман");
+}else{
+    console.log("Произошла ошибка");
+}
+
+console.log(personalMovieDB);
+
+//****************************Home work 2 *************************\\
