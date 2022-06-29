@@ -278,54 +278,79 @@
 
 
 
-//****************************Home work 2 *************************\\
+// //****************************Home work 3 *************************\\
+// let numberOfFilms;
 
-let numberOfFilms;
+// function start() {
+//     numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+//     while (numberOfFilms === '' || numberOfFilms === null || isNaN(numberOfFilms)) {
+//         numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+//     }
+// }
 
-function start() {
-    numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
-    while(numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)){
-        numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
-    }
-}
+// start();
 
-start();
-
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
 
-// const question = prompt("Один из последних просмотренных фильмов?", "");
-// const answer  = prompt("На сколько оцените его?", "");
+// // const question = prompt("Один из последних просмотренных фильмов?", "");
+// // const answer  = prompt("На сколько оцените его?", "");
 
-const quantity = 2;
-for (let i = 1; i <= quantity; i++) {
-    const question = prompt("Один из последних просмотренных фильмов?", ""),
-          answer = prompt("На сколько оцените его?", "");
+// const quantity = 2;
 
-    if (question != '' && question != null && answer != '' && answer != null && answer.length <50 ) {
-        personalMovieDB.movies[question] = answer;
-    } else {
-        alert("Sual və ya cavab boş ola bilməz!!!");
-        i--;
-    }
-}
+// function rememberMyFilms() {
+//     for (let i = 1; i <= quantity; i++) {
+//         const question = prompt("Один из последних просмотренных фильмов?", ""),
+//             answer = prompt("На сколько оцените его?", "");
 
-if (personalMovieDB.count < 10){
-    console.log("Просмотрено довольно мало фильмов");
-}else if(personalMovieDB.count > 10 && personalMovieDB.count < 30 ){
-    console.log("Вы классический зритель");
-}else if(personalMovieDB.count > 30){
-    console.log("Вы киноман");
-}else{
-    console.log("Произошла ошибка");
-}
+//         if (question != '' && question != null && answer != '' && answer != null && answer.length < 50) {
+//             personalMovieDB.movies[question] = answer;
+//         } else {
+//             alert("Sual və ya cavab boş ola bilməz!!!");
+//             i--;
+//         }
+//     }
+// }
 
-console.log(personalMovieDB);
+// // rememberMyFilms();
 
-//****************************Home work 2 *************************\\
+// function detectedPersonalLevel() {
+//     if (personalMovieDB.count < 10) {
+//         console.log("Просмотрено довольно мало фильмов");
+//     } else if (personalMovieDB.count > 10 && personalMovieDB.count < 30) {
+//         console.log("Вы классический зритель");
+//     } else if (personalMovieDB.count > 30) {
+//         console.log("Вы киноман");
+//     } else {
+//         console.log("Произошла ошибка");
+//     }
+// }
+
+// // detectedPersonalLevel();
+
+
+// function showMyDB(hiden) {
+//     if (!hiden) {
+//         console.log(personalMovieDB);
+//     }
+// }
+
+
+// function writeYourGenres() {
+//     const quantityQuestions = 3;
+//     for (let i = 1; i <= quantityQuestions; i++) {
+//         const genre = prompt(`Ваш любимый жанр под номером ${i}`, "");
+//         personalMovieDB.genres[i-1] = genre;
+//     }
+// }
+// showMyDB(personalMovieDB.privat);
+// writeYourGenres();
+// //****************************Home work 3 *************************\\
+
+
