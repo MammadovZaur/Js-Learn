@@ -254,3 +254,22 @@
 // console.log(calc);
 
 // //****************************Functions*************************\\
+
+// // //****************************String Metods*************************\\
+// const client = "Mammadov Zaur";
+
+// console.log(client.length);
+// console.log(client.toUpperCase());
+// console.log(client.toLocaleLowerCase());
+// console.log(client.indexOf('ov'));
+// console.log(client.slice(9, 13));
+// console.log(client.substring(9, 13));
+// console.log(client.substr(9, 4));
+// // //****************************String Metods*************************\\
+
+//****************************Number Metods*************************\\
+
+
+
+
+//****************************Number Metods*************************\\
