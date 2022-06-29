@@ -267,9 +267,11 @@
 // console.log(client.substr(9, 4));
 // // //****************************String Metods*************************\\
 
-//****************************Number Metods*************************\\
-
-
-
-
-//****************************Number Metods*************************\\
+// //****************************Number Metods*************************\\
+// const num = 125.563;
+// const str = '125.563px';
+// console.log(Math.random());
+// console.log(Math.round(num));
+// console.log(parseInt(str));
+// console.log(parseFloat(str));
+// //****************************Number Metods*************************\\
