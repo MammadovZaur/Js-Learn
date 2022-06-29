@@ -354,3 +354,28 @@
 // //****************************Home work 3 *************************\\
 
 
+function first() {
+    setTimeout(function(){
+        console.log(1);
+    },500);
+}
+
+function second(){
+    console.log(2);
+}
+
+first();
+second();
+
+function done(){
+    console.log('DERS OK');
+}
+
+function learn(language, callBac){
+    console.log(`Dərslərin vəziyyəti? ${language}`);
+    callBac();
+}
+
+
+
+learn("JS",done);
