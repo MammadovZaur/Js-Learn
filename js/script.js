@@ -354,28 +354,82 @@
 // //****************************Home work 3 *************************\\
 
 
-function first() {
-    setTimeout(function(){
-        console.log(1);
-    },500);
-}
+// function first() {
+//     setTimeout(function(){
+//         console.log(1);
+//     },500);
+// }
 
-function second(){
-    console.log(2);
-}
+// function second(){
+//     console.log(2);
+// }
 
-first();
-second();
+// first();
+// second();
 
-function done(){
-    console.log('DERS OK');
-}
+// function done(){
+//     console.log('DERS OK');
+// }
 
-function learn(language, callBac){
-    console.log(`Dərslərin vəziyyəti? ${language}`);
-    callBac();
-}
+// function learn(language, callBac){
+//     console.log(`Dərslərin vəziyyəti? ${language}`);
+//     callBac();
+// }
 
 
 
-learn("JS",done);
+// learn("JS",done);
+
+
+
+// //************************OBJECT************************\\
+
+// const options = {
+//     name: 'Moitor',
+//     height: '1024',
+//     weight: '1368',
+//     colors: {
+//         boardColor: 'black',
+//         logoColor: 'blue',
+//         fullColor: {
+//             colum: 'red',
+//             stabl: 'blue',
+//             ome: 'hin'
+//         }
+//     },
+//     makeTest: function(){
+//         console.log('Zaur');
+//     }
+// };
+
+// // console.log(Object.keys(options).length);
+// // options.makeTest();
+
+// const {colum, ome} = options.colors.fullColor;
+// console.log(colum, ome);
+
+
+// // for (const key in options) {
+// //     if (Object.hasOwnProperty.call(options, key)) {
+// //         const element = options[key];
+// //         console.log(element);
+// //     }
+// // }
+
+// // for (const key in options) {
+// //     console.log(typeof options[key]);
+// //     // console.log(`Svoystvo: ${key}, znacenie: ${options[key]}`);
+// // }
+
+
+// // for (const key in options) {
+// //     if (typeof options[key] === 'object') {
+// //         for (const i in options[key]) {
+// //             console.log(`Svoystvo: ${i}, znacenie: ${options[key][i]}`);
+// //         }
+// //     } else {
+// //         console.log(`Svoystvo: ${key}, znacenie: ${options[key]}`);
+// //     }
+// // }
+
+// //************************OBJECT************************\\
