@@ -467,3 +467,58 @@
 //************************Array************************\\
 
 
+//************************Link types************************\\
+
+const options = {
+    name: 'Moitor',
+    height: '1024',
+    weight: '1368',
+    colors: {
+        boardColor: 'black',
+        logoColor: 'blue',
+        fullColor: {
+            colum: 'red',
+            stabl: 'blue',
+            ome: 'hin'
+        }
+    },
+    makeTest: function () {
+        console.log('Zaur');
+    }
+};
+
+
+function copy(mainObj) {    
+    let objCopy = {};
+
+    let key;
+    for (key in mainObj) {
+        if (Object.hasOwnProperty.call(mainObj, key)) {
+            objCopy[key] = mainObj[key];
+        }
+    }
+
+    return objCopy;
+}
+
+
+// function copy(mainObj) {
+//     let objCopy = {};
+
+//     let key;
+//     for (key in mainObj) {
+//         objCopy[key] = mainObj[key];
+//     }
+
+//     return objCopy;
+// }
+
+const newObj = copy(options);
+newObj.colors.boardColor = 'Processor';
+console.log(options.colors.boardColor);
+console.log(newObj.colors.boardColor);
+
+// console.log(options);
+// console.log(newObj);
+
+//************************Link types************************\\
