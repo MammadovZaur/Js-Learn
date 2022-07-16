@@ -467,92 +467,114 @@
 //************************Array************************\\
 
 
-//************************Link types************************\\
+// //************************Link types************************\\
 
-const options = {
-    name: 'Moitor',
-    height: '1024',
-    weight: '1368',
-    colors: {
-        boardColor: 'black',
-        logoColor: 'blue',
-        fullColor: {
-            colum: 'red',
-            stabl: 'blue',
-            ome: 'hin'
-        }
-    },
-    makeTest: function () {
-        console.log('Zaur');
+// const options = {
+//     name: 'Moitor',
+//     height: '1024',
+//     weight: '1368',
+//     colors: {
+//         boardColor: 'black',
+//         logoColor: 'blue',
+//         fullColor: {
+//             colum: 'red',
+//             stabl: 'blue',
+//             ome: 'hin'
+//         }
+//     },
+//     makeTest: function () {
+//         console.log('Zaur');
+//     }
+// };
+
+
+// // function copy(mainObj) {    
+// //     let objCopy = {};
+
+// //     let key;
+// //     for (key in mainObj) {
+// //         if (Object.hasOwnProperty.call(mainObj, key)) {
+// //             objCopy[key] = mainObj[key];
+// //         }
+// //     }
+
+// //     return objCopy;
+// // }
+
+
+// // function copy(mainObj) {
+// //     let objCopy = {};
+
+// //     let key;
+// //     for (key in mainObj) {
+// //         objCopy[key] = mainObj[key];
+// //     }
+
+// //     return objCopy;
+// // }
+
+// // const newObj = copy(options);
+// // newObj.colors.boardColor = 'Processor';
+// // console.log(options.colors.boardColor);
+// // console.log(newObj.colors.boardColor);
+
+// // console.log(options);
+// // console.log(newObj);
+
+// const newAddObj = {
+//     programmerName: "Zaur",
+//     hrName: "Oley"
+// };
+
+// // Object.assign(options, newAddObj);
+// // console.log(options);
+
+// const newObj = Object.assign({},options);
+// newObj.colors.logoColor = "red";
+// newObj.name = "New";
+
+// // console.log(newObj.name);
+// // console.log(options.name);
+
+// const oldArray = ['Zaur', 'Vuqar', 'Elnur',{
+//     yash: 35,
+//     boy:  175
+// }];
+// const newArray = oldArray.slice();
+
+// newArray[3].boy = 190;
+
+// const video = ['youtube', 'erp-bs', 'doctorum'],
+//       saty  = ['obby', 'elmler'],
+//       diger = [...video, ...saty, 'Mammadov', 'Hasanov'];
+
+
+// console.log(...video);
+// // console.log(newArray);
+// console.log({...options});
+// //************************Link types************************\\
+
+
+
+//************************Proto************************\\
+
+let str    = "some";
+let strObj = new String("SomeObj");
+
+// console.log(typeof(str));
+// console.log(typeof(strObj));
+
+const solilder = {
+    health: 400,
+    amour: 100,
+    sayHello: function(){
+        console.log("Salam Asker");
     }
 };
 
 
-// function copy(mainObj) {    
-//     let objCopy = {};
+const jon = Object.create(solilder);
 
-//     let key;
-//     for (key in mainObj) {
-//         if (Object.hasOwnProperty.call(mainObj, key)) {
-//             objCopy[key] = mainObj[key];
-//         }
-//     }
+jon.sayHello();
 
-//     return objCopy;
-// }
-
-
-// function copy(mainObj) {
-//     let objCopy = {};
-
-//     let key;
-//     for (key in mainObj) {
-//         objCopy[key] = mainObj[key];
-//     }
-
-//     return objCopy;
-// }
-
-// const newObj = copy(options);
-// newObj.colors.boardColor = 'Processor';
-// console.log(options.colors.boardColor);
-// console.log(newObj.colors.boardColor);
-
-// console.log(options);
-// console.log(newObj);
-
-const newAddObj = {
-    programmerName: "Zaur",
-    hrName: "Oley"
-};
-
-// Object.assign(options, newAddObj);
-// console.log(options);
-
-const newObj = Object.assign({},options);
-newObj.colors.logoColor = "red";
-newObj.name = "New";
-
-// console.log(newObj.name);
-// console.log(options.name);
-
-const oldArray = ['Zaur', 'Vuqar', 'Elnur',{
-    yash: 35,
-    boy:  175
-}];
-const newArray = oldArray.slice();
-
-newArray[3].boy = 190;
-
-const video = ['youtube', 'erp-bs', 'doctorum'],
-      saty  = ['obby', 'elmler'],
-      diger = [...video, ...saty, 'Mammadov', 'Hasanov'];
-
-
-console.log(...video);
-// console.log(newArray);
-
-
-
-
-//************************Link types************************\\
+//************************Proto************************\\
