@@ -488,18 +488,18 @@ const options = {
 };
 
 
-function copy(mainObj) {    
-    let objCopy = {};
+// function copy(mainObj) {    
+//     let objCopy = {};
 
-    let key;
-    for (key in mainObj) {
-        if (Object.hasOwnProperty.call(mainObj, key)) {
-            objCopy[key] = mainObj[key];
-        }
-    }
+//     let key;
+//     for (key in mainObj) {
+//         if (Object.hasOwnProperty.call(mainObj, key)) {
+//             objCopy[key] = mainObj[key];
+//         }
+//     }
 
-    return objCopy;
-}
+//     return objCopy;
+// }
 
 
 // function copy(mainObj) {
@@ -513,12 +513,20 @@ function copy(mainObj) {
 //     return objCopy;
 // }
 
-const newObj = copy(options);
-newObj.colors.boardColor = 'Processor';
-console.log(options.colors.boardColor);
-console.log(newObj.colors.boardColor);
+// const newObj = copy(options);
+// newObj.colors.boardColor = 'Processor';
+// console.log(options.colors.boardColor);
+// console.log(newObj.colors.boardColor);
 
 // console.log(options);
 // console.log(newObj);
+
+const newAddObj = {
+    programmerName: "Zaur",
+    hrName: "Oley"
+};
+
+Object.assign(options, newAddObj);
+console.log(options);
 
 //************************Link types************************\\
