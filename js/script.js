@@ -526,7 +526,33 @@ const newAddObj = {
     hrName: "Oley"
 };
 
-Object.assign(options, newAddObj);
-console.log(options);
+// Object.assign(options, newAddObj);
+// console.log(options);
+
+const newObj = Object.assign({},options);
+newObj.colors.logoColor = "red";
+newObj.name = "New";
+
+// console.log(newObj.name);
+// console.log(options.name);
+
+const oldArray = ['Zaur', 'Vuqar', 'Elnur',{
+    yash: 35,
+    boy:  175
+}];
+const newArray = oldArray.slice();
+
+newArray[3].boy = 190;
+
+const video = ['youtube', 'erp-bs', 'doctorum'],
+      saty  = ['obby', 'elmler'],
+      diger = [...video, ...saty, 'Mammadov', 'Hasanov'];
+
+
+console.log(...video);
+// console.log(newArray);
+
+
+
 
 //************************Link types************************\\
