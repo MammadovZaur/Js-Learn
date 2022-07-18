@@ -635,10 +635,18 @@ const personalMovieDB = {
         for (let i = 1; i <= 3; i++) {
             personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
         }
-    }
-            
-    
-    
+    },
+
+    toggleVisibleMyDB: function(){
+        if(personalMovieDB.privat) {
+            personalMovieDB.privat = false;
+        }else{
+            personalMovieDB.privat = true;
+        }
+    },
+
 };
+
+
 
 //************************Step 4************************\\
