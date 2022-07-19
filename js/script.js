@@ -652,3 +652,14 @@
 // //************************Step 4************************\\
 
 
+//************************Debug************************\\
+const friends = ['Mammadov Zaur', 'Həsənov Zaur', 'Abaslı Elnur'];
+
+function myFriens() {
+    friends.forEach(element => {
+        element;
+    });
+}
+
+myFriens();
+//************************Debug************************\\
