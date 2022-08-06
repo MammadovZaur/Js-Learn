@@ -652,14 +652,14 @@
 // //************************Step 4************************\\
 
 
-//************************Debug************************\\
-const friends = ['Mammadov Zaur', 'Həsənov Zaur', 'Abaslı Elnur'];
+// //************************Debug************************\\
+// const friends = ['Mammadov Zaur', 'Həsənov Zaur', 'Abaslı Elnur'];
 
-function myFriens() {
-    friends.forEach(element => {
-        element;
-    });
-}
+// function myFriens() {
+//     friends.forEach(curElement => {
+//         console.log(curElement);
+//     });
+// }
 
-myFriens();
-//************************Debug************************\\
+// myFriens();
+// //************************Debug************************\\
