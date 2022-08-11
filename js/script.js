@@ -592,7 +592,7 @@
 //     privat: false,
 //     start: function () {
 //         personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
-    
+
 //         while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
 //             personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
 //         }
@@ -602,7 +602,7 @@
 //         for (let i = 0; i < 2; i++) {
 //             const a = prompt('Один из последних просмотренных фильмов?', ''),
 //                   b = prompt('На сколько оцените его?', '');
-        
+
 //             if (a != null && b != null && a != '' && b != '' && a.length < 50) {
 //                 personalMovieDB.movies[a] = b;
 //                 console.log('done');
@@ -630,7 +630,7 @@
 //             console.log(personalMovieDB);
 //         }
 //     },
-    
+
 //     writeYourGenres: function() {
 //         for (let i = 1; i <= 3; i++) {
 //             personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
@@ -663,3 +663,64 @@
 
 // myFriens();
 // //************************Debug************************\\
+
+
+//
+// // //************************Types************************\\
+// console.log(String(null));
+// console.log(typeof(String(null)));
+// console.log(String(5));
+// console.log(typeof(String(5)));
+
+
+// console.log(String(""+null));
+// console.log(typeof(String(""+null)));
+// console.log(String(""+5));
+// console.log(typeof(String(""+5)));
+
+// console.log(typeof(Number("5")));
+// console.log(Number("5"));
+
+// console.log(typeof(+"5"));
+// console.log(+"5");
+
+// console.log(typeof(parseInt("150px",10)));
+
+// // //************************Types************************\\
+
+
+//************************ Замыкание ************************\\
+// let number = 5; debugger;
+
+// function logNumber() {
+//     let number = 4;debugger;
+//     console.log(number);
+// }
+
+// number = 6;
+
+// logNumber(); debugger;
+
+// //****************** */
+// function creatCounter() {
+//     let counter = 0;
+
+//     const myFunction = function(){
+//         counter = counter + 1;
+//         return counter;
+//     };
+
+//     return myFunction;
+// }
+
+// const incriment = creatCounter();
+// const c1 = incriment();
+// const c2 = incriment();
+// const c3 = incriment();
+
+// const incriment2 = creatCounter();
+// const a1 = incriment();
+// const a2 = incriment();
+// const a3 = incriment();
+    
+//************************ Замыкание ************************\\
